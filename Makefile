@@ -1,6 +1,6 @@
 
 install:
-	virtualenv venv
+	virtualenv venv --python=python2
 	./venv/bin/pip install nodeenv
 	./venv/bin/nodeenv -p --node=5.11.0 --prebuilt
 	./venv/bin/pip install -r py_requirements.txt
